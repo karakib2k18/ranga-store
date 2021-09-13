@@ -116,7 +116,7 @@ const productDetails = (productID) => {
     <h5 class="card-title">Title: ${productID.title}</h5>
     <p class="card-text">Description: ${productID.description}</p>
     <p class="card-text">Category: ${productID.category}</p>
-    <p class="card-text">Price: $(${productID.price})</p>
+    <p class="card-text">Price: $ ${productID.price}</p>
     <p class="card-text">Ratings: ${productID.rating.rate} (${productID.rating.count})</p>
   </div>
   
