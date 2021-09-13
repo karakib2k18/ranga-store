@@ -23,9 +23,9 @@ const showProducts = (products) => {
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $${product.price}</h2>
-      <p> Ratings: ${product.rating.rate}  (${product.rating.count})</p>
+      <p> Ratings: ${product.rating.rate}  (${product.rating.count} Reviews)</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="font-weight-bold buy-now btn btn-warning">add to cart</button>
-      <button onclick="singleProductLoad( ${product.id})" id="details-btn" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" >Details</button>
+      <button onclick="singleProductLoad( ${product.id})" id="details-btn" class="btn text-dark btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal" >Details</button>
       </div>
 
       `;
@@ -117,7 +117,7 @@ const productDetails = (productID) => {
     <p class="card-text">Description: ${productID.description}</p>
     <p class="card-text">Category: ${productID.category}</p>
     <p class="card-text">Price: $${productID.price}</p>
-    <p class="card-text">Ratings: ${productID.rating.rate} (${productID.rating.count})</p>
+    <p class="card-text">Ratings: ${productID.rating.rate} (${productID.rating.count} Reviews)</p>
   </div>
   
   `;
