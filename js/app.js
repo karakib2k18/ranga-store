@@ -1,3 +1,4 @@
+document.getElementById('my-cart').style.display = "none";
 const loadProducts = () => {
   document.getElementById('spinnerh').style.display = "block";
   let url = `https://fakestoreapi.com/products`;
@@ -29,6 +30,7 @@ const showProducts = (products) => {
 
       `;
     document.getElementById('spinnerh').style.display = "none";
+    document.getElementById('my-cart').style.display = "block";
     document.getElementById("all-products").appendChild(div);
 
   }
