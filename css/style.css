@@ -2,6 +2,18 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.btn {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.form-control {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.searchbtn {
+    font-size: 1.5rem !important;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -60,6 +72,16 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+.btnbuy {
+    background-color: #a42fc1 !important;
+    color: white !important;
+}
+.card{
+  width: 28rem;
+}
+.single-img{
+  height: 375px;
+}
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -84,3 +106,4 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
